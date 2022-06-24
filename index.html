@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <title>Blades and Sorcery</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="game-over-outer">
+        <div class="goe wins" id="display-result">Player 1 Wins</div>
+        <div class="goe restart" id="restart-game">Restart</div>
+      </div>
+      <div class="child">
+        <div class="outer1">
+          <div class="player-health"></div>
+          <div class="top-hp tenten"></div>
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              color: orange;
+              display: flex;
+              padding-top: 25px;
+            "
+          >
+            Stamina
+            <span
+              id="attack-limit-p1"
+              style="padding-left: 10px; color: whitesmoke"
+            >
+              30
+            </span>
+          </div>
+        </div>
+
+        <div class="timer" id="timer">60</div>
+
+        <div class="outer2">
+          <div class="enemy-health"></div>
+          <div class="top-hp2 tenten"></div>
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              color: orange;
+              display: flex;
+              padding-top: 25px;
+              padding-left: 520px;
+            "
+          >
+            Stamina
+            <span
+              id="attack-limit-p2"
+              style="padding-left: 10px; color: whitesmoke"
+            >
+              30
+            </span>
+          </div>
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/key_controls.js"></script>
+  </body>
+</html>
